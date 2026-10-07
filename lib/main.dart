@@ -40,6 +40,14 @@ class HomePage extends StatelessWidget {
               fontWeight: FontWeight.w700
             ),
           ),
+          const Padding(padding: EdgeInsets.all(40),
+          child: Text('0',
+            style: TextStyle(
+              fontSize: 100,
+              color: Color.fromARGB(255, 4, 87, 15)
+            ),
+            ),
+            ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -47,6 +55,9 @@ class HomePage extends StatelessWidget {
                   child: Text('Sair'),
                   ),
                   TextButton(onPressed: increment,
+                  style: TextButton.styleFrom(
+                    backgroundColor: Colors.white
+                  ),
                   child: Text('Entrar'),
                   ),
             ]
